@@ -1,10 +1,10 @@
-package com.zerobase.doibank;
+package com.zerobase.banktree;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DoiBankApplicationTests {
+class BankTreeApplicationTests {
 
     @Test
     void contextLoads() {

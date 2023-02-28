@@ -1,13 +1,13 @@
-package com.zerobase.doibank;
+package com.zerobase.banktree;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DoiBankApplication {
+public class BankTreeApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DoiBankApplication.class, args);
+        SpringApplication.run(BankTreeApplication.class, args);
     }
 
 }

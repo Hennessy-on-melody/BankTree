@@ -1,4 +1,4 @@
-package com.zerobase.doibank.domain;
+package com.zerobase.banktree.domain;
 
 import jakarta.persistence.*;
 
