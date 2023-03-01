@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://127.0.0.1:3306/BankTree
+    username: bank_user
+    password: a1234
+
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql:
+
+  thymeleaf:
+    prefix: classpath:templates/
+    cache: false
+    suffix: .html
+
+logging:
+  level:
+    org.hibernate.sql: debug
+    org.hibernate.type: trace
