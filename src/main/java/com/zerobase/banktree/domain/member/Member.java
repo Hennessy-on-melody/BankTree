@@ -39,5 +39,8 @@ public class Member {
     private List<Transfer> transfers;
 
 
+    //==생성 메서드==//
+
+
 
 }
