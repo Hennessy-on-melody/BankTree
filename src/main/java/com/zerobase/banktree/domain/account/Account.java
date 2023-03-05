@@ -1,22 +1,36 @@
-package com.zerobase.banktree.domain;
+package com.zerobase.banktree.domain.account;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import com.zerobase.banktree.domain.member.Member;
+import com.zerobase.banktree.domain.transfer.Transfer;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import javax.persistence.*;
+import java.util.List;
+
+import static javax.persistence.FetchType.*;
+import static lombok.AccessLevel.PROTECTED;
 
 @Entity
-@Table(name = "account")
+@Getter
+@Setter
+@NoArgsConstructor(access = PROTECTED)
+@AllArgsConstructor
 public class Account {
-    @ManyToOne
+
+    @Id
+    @GeneratedValue
+    private Long id;
+    private int accountNumber;
+    private int balance;
+    @ManyToOne(fetch = LAZY)
     @JoinColumn(name = "member_id")
     private Member member;
 
-    public Member getMember() {
-        return member;
-    }
+    @OneToMany(mappedBy = "account")
+    private List<Transfer> transfers;
 
-    public void setMember(Member member) {
-        this.member = member;
-    }
+
 }

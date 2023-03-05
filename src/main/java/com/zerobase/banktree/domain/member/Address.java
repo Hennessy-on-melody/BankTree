@@ -1,7 +1,7 @@
-package com.zerobase.banktree.domain;
+package com.zerobase.banktree.domain.member;
 
 
-import jakarta.persistence.Embeddable;
+import javax.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
