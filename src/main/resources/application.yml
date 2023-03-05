@@ -22,3 +22,15 @@ logging:
   level:
     org.hibernate.sql: debug
     org.hibernate.type: trace
+
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: hennessy.testacc@gmail.com
+    password: wjysucdhplahgpmo
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
